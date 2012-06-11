@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+from gistpy import Dispatcher
+
+def main():
+    Dispatcher().dispatch()
+
+if __name__ == "__main__":
+    main()
