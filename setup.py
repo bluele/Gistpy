@@ -18,7 +18,7 @@ def read_file(filename):
 
 
 setup(name="Gistpy",
-      version="0.1.0",
+      version="0.2.0",
       description="Command line client for gist.",
       long_description=read_file("README.rst"),
       license="MIT",
