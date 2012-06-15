@@ -49,7 +49,7 @@ class Create(SimpleCommand):
 
     def on_receive(self, response):
         self.clipboard_set(response["html_url"])
-        print "PUT ===> {0}".format(response["html_url"])
+        print "CREATE ====> {0}".format(response["html_url"])
         for fpath in self.files:
             print fpath
         return response
@@ -68,6 +68,6 @@ class CreateStdin(Create):
 
     def on_receive(self, response):
         self.clipboard_set(response["html_url"])
-        print "PUT ===> {0}".format(response["html_url"])
+        print "CREATE ====> {0}".format(response["html_url"])
         print self.filename
         return response

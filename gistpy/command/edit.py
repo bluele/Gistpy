@@ -31,4 +31,6 @@ class Edit(SimpleCommand):
         return self.on_receive(response)
     
     def on_receive(self, response):
+        self.clipboard_set(response["html_url"])
+        print u"EDIT ====> {0}".format(response["html_url"])
         return response
