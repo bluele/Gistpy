@@ -2,12 +2,6 @@
 Gistpy
 ================
 
-:Author:	Jun Kimura
-:Licence: 	MIT
-
-Description
-------------
-
 Command line client for gist(API v3).
 
 
@@ -30,8 +24,16 @@ Usage
 
 Authorization::
 
-	$ export GISTPY_USER=username & export GISTPY_PASSWORD=password
+	# Get accesstoken
+	$ export GISTPY_USER=username
+	$ export GISTPY_PASSWORD=password
 	$ gistpy register
+	# or 
+	$ gistpy register -u username -p password
+	...
+	Your access_token is xxxxxxxxxxx
+	
+	# Set accesstoken
 	$ export GISTPY_TOKEN=xxxxxxxxxxx
 
 
@@ -66,3 +68,9 @@ Display the help of each command. ::
 
 	$ gistpy <command> -h
 	
+
+LICENSE
+------------
+
+This software is licensed under the MIT License.
+
