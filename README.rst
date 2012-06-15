@@ -11,6 +11,8 @@ Installation
 pypi::
 
 	$ pip install gistpy
+	# or 
+	$ easy_install gistpy
 	$ gistpy -h
 
 Source code::
